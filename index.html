@@ -31,11 +31,30 @@
                 />
                 <input type="submit" value="log in"/>
             </form>
+            <form id="todos-form">
+                <input id="todos-input"
+                type="text"
+                placeholder="할 일"
+                maxlength="15"
+                required
+                />
+                <input type="submit" value="저장"/>
+            </form>
             <h1 id="hello"></h1>   
             <div id ="clock"></div>
-            <script src="app.js"></script>
+            <div id = "quote">
+                <span></span>
+                <span></span>
+            </div>
             <script src="clock.js"></script>
             <script src="login.js"></script>
+            <script src="background.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+            <script src="app.js"></script>
+            <script src="todos.js"></script>
         </body>
     </body>
 </html>
+
+
